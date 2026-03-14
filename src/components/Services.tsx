@@ -1,28 +1,6 @@
 import { ArrowRight } from 'lucide-react';
-
-const servicePhases = [
-  {
-    id: '1',
-    title: 'Customer Experience',
-    description: 'Understanding how customers actually experience your business and identifying areas for improvement.',
-    image: 'assets/support.jpg',
-    shortDescription: 'We take customer experience audits and mystery shopping that reveal real service gaps, Customer Retention and Engagement Advisory.'
-  },
-  {
-    id: '2',
-    title: 'Services and Controls',
-    description: 'Strengthening internal processes, operational discipline, and risk management practices.',
-    image: 'assets/risk.jpg',
-    shortDescription: 'We provide capacity building and training to support effective implementation of systems, strengthen risk awareness, and promote a strong control culture within organisations.'
-  },
-  {
-    id: '3',
-    title: 'Business Advisory Services',
-    description: 'Supporting organisations with practical strategies and operational improvements that drive sustainable growth.',
-    image: 'assets/business-support.jpg',
-    shortDescription: 'We provide practical advisory support to organisations seeking to improve performance and growth.'
-  },
-];
+import { Link } from 'react-router-dom';
+import { services } from '../data/services';
 
 export default function Services() {
   return (
@@ -36,7 +14,7 @@ export default function Services() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {servicePhases.map((service) => (
+          {services.map((service) => (
             <div
               key={service.id}
               className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col h-full"
@@ -56,18 +34,17 @@ export default function Services() {
                   {service.shortDescription}
                 </p>
 
-                <a
+                <Link
+                  to={`/service/${service.id}`}
                   className="inline-flex items-center justify-center gap-2 bg-[#324a70] text-white px-6 py-2 rounded-lg hover:bg-[#1d2d45] transition-all duration-300 font-medium text-sm"
                 >
                   Learn More
                   <ArrowRight size={18} />
-                </a>
+                </Link>
               </div>
             </div>
           ))}
         </div>
-
-       
       </div>
     </section>
   );

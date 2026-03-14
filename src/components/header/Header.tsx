@@ -1,5 +1,6 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { NavMenus } from './Nav-menus';
 import { GetStarted } from './Get-started';
 
@@ -11,14 +12,14 @@ export default function Header() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     <div className="flex-shrink-0">
-                        <a href="#home" className="flex items-center hover:opacity-80 transition-opacity"> 
+                        <Link to="/" className="flex items-center hover:opacity-80 transition-opacity"> 
                             <img
                                 src="assets/icon.png"
                                 alt="Thinkbase Logo"
                                 className="h-14 w-14 object-cover"
                             />
                             <h1 className='text-[#1d2d45] font-bold font-sans text-xl'>THINKBASE ADVISORY</h1>
-                        </a>
+                        </Link>
                     </div>
 
                     <nav className="hidden md:flex space-x-8">
