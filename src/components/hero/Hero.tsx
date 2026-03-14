@@ -1,4 +1,5 @@
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Hero() {
     return (
@@ -20,12 +21,12 @@ export default function Hero() {
                             We help you understand your real customer experience, identify gaps, and build sustainable growth
                             through stronger operations and customer retention.
                         </p>
-
+ 
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <a href="#contact" className="inline-flex items-center justify-center gap-2 bg-[#304c76] text-white px-8 py-4 rounded-lg hover:bg-[#5988ce] transition-all hover:scale-110 font-medium shadow-md">
+                            <Link to="/coming-soon" className="inline-flex items-center justify-center gap-2 bg-[#304c76] text-white px-8 py-4 rounded-lg hover:bg-[#5988ce] transition-all hover:scale-110 font-medium shadow-md">
                                 Get Started
                                 <ArrowRight size={20} />
-                            </a>
+                            </Link>
                             <a href="#services" className="hover:scale-105 inline-flex items-center justify-center gap-2 bg-[#cad8ec] text-black px-8 py-4 rounded-lg transition-colors font-medium shadow-sm">
                                 Explore Services
                             </a>

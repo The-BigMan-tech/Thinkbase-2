@@ -3,6 +3,7 @@ import Header from './components/header/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import ServiceDetails from './pages/ServiceDetails';
+import ComingSoon from './pages/ComingSoon';
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/service/:id" element={<ServiceDetails />} />
+                    <Route path="/coming-soon" element={<ComingSoon />} />
                 </Routes>
             </main>
             <Footer />

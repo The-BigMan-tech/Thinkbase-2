@@ -98,7 +98,7 @@ export default function ServiceDetails() {
                   Contact us today to discuss how we can tailor this solution to your specific organization needs.
                 </p>
                 <Link 
-                  to="/#contact" 
+                  to="/coming-soon" 
                   className="block w-full text-center bg-[#324a70] text-white py-4 rounded-xl font-bold hover:bg-[#1d2d45] transition-colors"
                 >
                   Get Started
@@ -116,7 +116,7 @@ export default function ServiceDetails() {
           Our advisors are ready to help you navigate your challenges and unlock new opportunities for growth.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link to="/#contact" className="bg-[#1d2d45] text-white px-10 py-4 rounded-xl font-bold hover:scale-105 transition-transform text-lg">
+          <Link to="/coming-soon" className="bg-[#1d2d45] text-white px-10 py-4 rounded-xl font-bold hover:scale-105 transition-transform text-lg">
             Get Started
           </Link>
           <Link to="/" className="bg-white border-2 border-[#1d2d45] text-[#1d2d45] px-10 py-4 rounded-xl font-bold hover:bg-gray-50 transition-colors text-lg">
