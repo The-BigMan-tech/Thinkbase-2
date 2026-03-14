@@ -8,9 +8,9 @@ export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <header className="fixed top-0 left-0 right-0 bg-white bg-opacity-50 backdrop-blur-sm z-50 shadow-sm shadow-[#5279b3]">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between items-center h-16">
+        <header className="fixed top-4 left-0 right-0 z-50 flex justify-center px-4">
+            <div className="max-w-7xl w-full bg-white/70 backdrop-blur-xl border border-white/20 rounded-full shadow-[0_8px_32px_0_rgba(31,38,135,0.07)] px-8 py-3 transition-all duration-300">
+                <div className="flex justify-between items-center">
                     <div className="flex-shrink-0">
                         <Link to="/" className="flex items-center hover:opacity-80 transition-opacity"> 
                             <img

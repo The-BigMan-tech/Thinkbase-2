@@ -34,7 +34,10 @@ export default function Contact() {
           </div>
 
           <div className="relative">
-            <div className="bg-[#324a70] p-10 rounded-[2.5rem] shadow-[0_32px_64px_-16px_rgba(29,45,69,0.1)] border border-gray-100 relative z-10">
+            <div className="bg-[#324a70]/80 backdrop-blur-xl p-10 rounded-[2.5rem] shadow-[0_32px_64px_-16px_rgba(29,45,69,0.2)] border border-white/10 relative z-10 overflow-hidden">
+              {/* Internal glow effect */}
+              <div className="absolute -top-20 -left-20 w-40 h-40 bg-white/10 rounded-full blur-3xl pointer-events-none"></div>
+              
               <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
                 <MessageSquare className="text-white" />
                 Send a Message
