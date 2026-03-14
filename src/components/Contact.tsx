@@ -7,7 +7,7 @@ export default function Contact() {
         <div className="grid lg:grid-cols-2 gap-20">
           <div className="space-y-12">
             <div className="space-y-6">
-              <h2 className='font-bold text-5xl'>Get in Touch</h2>
+              <h2 className='font-bold text-5xl'>Contact us</h2>
               <p className="text-xl text-gray-600 leading-relaxed">
                 Ready to understand your customers better and strengthen your business?
                 Let's discuss how we can help you build sustainable growth through operational excellence.

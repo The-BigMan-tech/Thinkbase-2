@@ -51,7 +51,7 @@ export default function ServiceDetails() {
             <img 
               src={service.image} 
               alt={service.title} 
-              className="relative w-full aspect-video object-cover rounded-3xl shadow-2xl"
+              className="relative left-[25%] w-[45%] h-[50%] rounded-3xl shadow-2xl"
             />
           </div>
         </div>
@@ -117,7 +117,7 @@ export default function ServiceDetails() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link to="/#contact" className="bg-[#1d2d45] text-white px-10 py-4 rounded-xl font-bold hover:scale-105 transition-transform text-lg">
-            Book a Consultation
+            Get Started
           </Link>
           <Link to="/" className="bg-white border-2 border-[#1d2d45] text-[#1d2d45] px-10 py-4 rounded-xl font-bold hover:bg-gray-50 transition-colors text-lg">
             View All Services
