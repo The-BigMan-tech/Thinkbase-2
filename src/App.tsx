@@ -4,7 +4,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import ServiceDetails from './pages/ServiceDetails';
 import ComingSoon from './pages/ComingSoon';
-
+//
 function App() {
     return (
         <div className="min-h-screen">
