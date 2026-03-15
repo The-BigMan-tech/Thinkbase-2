@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Hero() {
     return (
-        <section id="home" className="pt-24 pb-16 bg-white border border-gray-200">
+        <section id="home" className="pt-24 pb-10 bg-white border border-gray-200">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-6rem)]">
                     <div className="space-y-8">
@@ -32,7 +32,7 @@ export default function Hero() {
                             </a>
                         </div>
 
-                        <div className="grid grid-cols-3 gap-8 pt-8 border-t border-gray-200">
+                        <div className="grid grid-cols-3 gap-8 pt-4">
                             <div>
                                 <p className="text-3xl font-bold text-gray-900">50+</p>
                                 <p className="text-gray-600">years of professional experience</p>

@@ -4,7 +4,7 @@ export const services = [
     title: 'Customer Experience',
     tagline: 'Elevating every touchpoint of your customer journey.',
     description: 'Understanding how customers actually experience your business and identifying areas for improvement.',
-    image: '/assets/support.jpg',
+    image: '/assets/team-1.png',
     shortDescription: 'We take customer experience audits and mystery shopping that reveal real service gaps, Customer Retention and Engagement Advisory.',
     details: [
       {
@@ -27,8 +27,8 @@ export const services = [
     features: ['Service Gap Analysis', 'Performance Benchmarking', 'Culture Transformation', 'Feedback Loop Integration']
   },
   {
-    id: 'services-and-controls',
-    title: 'Services and Controls',
+    id: 'systems-and-controls',
+    title: 'Systems and Controls',
     tagline: 'Fortifying your operations with robust discipline and risk management.',
     description: 'Strengthening internal processes, operational discipline, and risk management practices.',
     image: '/assets/risk.jpg',

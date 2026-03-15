@@ -1,4 +1,5 @@
 import { Target, Lightbulb, TrendingUp, Users } from 'lucide-react';
+import CoreValues from './CoreValues';
 
 const keyObjectives = [
     { text: 'Reduce silent customer loss through structured engagement.', icon: <Users className="w-6 h-6" /> },
@@ -9,8 +10,8 @@ const keyObjectives = [
 
 export default function About() {
   return (
-    <section id="about" className="pt-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
+    <section id="about" className="mt-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24 pb-[5%]">
             <div className="grid lg:grid-cols-2 gap-12 items-start">
                 <div className="space-y-8">
                     <div>
@@ -48,6 +49,7 @@ export default function About() {
                 </div>
             </div>     
         </div>
+        <CoreValues/>
     </section>
   );
 }
