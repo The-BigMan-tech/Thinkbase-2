@@ -29,29 +29,29 @@ export const services = [
   {
     id: 'systems-and-controls',
     title: 'Systems and Controls',
-    tagline: 'Fortifying your operations with robust discipline and risk management.',
-    description: 'Strengthening internal processes, operational discipline, and risk management practices.',
+    tagline: 'Fortifying your operations with robust systems, controls and risk management.',
+    description: 'ThinkBase Advisory supports organisations in strengthening operational discipline and managing key risks..',
     image: '/assets/risk.jpg',
-    shortDescription: 'We provide capacity building and training to support effective implementation of systems, strengthen risk awareness, and promote a strong control culture within organisations.',
+    shortDescription: 'Strong systems and controls are essential for consistent service delivery and sustainable business performance.ThinkBase Advisory supports organisations in strengthening operational discipline and managing key risks.Services include.',
     details: [
       {
-        title: 'Capacity Building',
-        content: 'Empowering your workforce with the skills and knowledge needed to execute complex internal systems effectively and consistently.'
+        title: 'Operational Risk & Control Assurance',
+        content: 'Strengthening organisational discipline through structured risk assessments and internal control reviews that safeguard processes and reduce exposure to operational failures.'
       },
       {
-        title: 'Risk Awareness & Management',
-        content: 'Developing a comprehensive understanding of operational risks and implementing proactive mitigation strategies across all levels of the organization.'
+        title: 'Process Improvement & Efficiency Optimisation',
+        content: 'Transforming core processes through mapping, SOP development, and workflow optimisation to improve consistency, eliminate bottlenecks, and boost overall performance.'
       },
       {
-        title: 'Control Culture Development',
-        content: 'Fostering an organizational environment where accountability and integrity are central, ensuring self-regulating compliance and excellence.'
+        title: 'Financial Integrity & Value Protection',
+        content: 'Identifying leakages and strengthening control points to protect revenue, enhance accountability, and improve financial performance across the organisation.'
       },
       {
-        title: 'System Implementation Support',
-        content: 'Hands-on assistance in deploying new control frameworks and operational tools, ensuring minimal disruption and maximum adoption.'
+        title: 'Capability Building & Control Culture Development',
+        content: 'Equipping teams with the practical skills, mindset, and awareness needed to implement systems effectively and sustain a strong organisational control culture.'
       }
     ],
-    features: ['Operational Resilience', 'Compliance Frameworks', 'Internal Audit Support', 'Workflow Optimization']
+    features: ['Operational Risk Assessments', 'Business Process Optimisation', 'Capacity Building & Training', 'Process Automation']
   },
   {
     id: 'business-advisory-services',
