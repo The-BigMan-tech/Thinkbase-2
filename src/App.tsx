@@ -4,10 +4,12 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import ServiceDetails from './pages/ServiceDetails';
 import ComingSoon from './pages/ComingSoon';
+import ScrollToHashElement from './components/ScrollToHashElement';
 //
 function App() {
     return (
         <div className="min-h-screen">
+            <ScrollToHashElement />
             <Header />
             <main>
                 <Routes>

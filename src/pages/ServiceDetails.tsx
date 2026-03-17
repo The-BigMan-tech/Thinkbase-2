@@ -26,23 +26,23 @@ export default function ServiceDetails() {
   }
 
   return (
-    <div className="bg-white min-h-screen pt-24 pb-16">
+    <div className="bg-white min-h-screen pt-24 pb-8">
       {/* Hero Section */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
-        <Link to="/" className="inline-flex items-center gap-2 text-gray-500 hover:text-[#1d2d45] transition-colors mb-8 group">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-4">
+        <Link to="/#services" className="inline-flex items-center gap-2 text-gray-500 hover:text-[#1d2d45] transition-colors mb-4 group">
           <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
           Back to all services
         </Link>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <span className="inline-block px-4 py-1 rounded-full bg-blue-50 text-[#324a70] text-sm font-semibold mb-6">
+            <span className="inline-block px-4 py-1 rounded-full bg-blue-50 text-[#324a70] text-sm font-semibold mb-4">
               Expert Solutions
             </span>
-            <h1 className="text-5xl lg:text-6xl font-bold text-[#1d2d45] mb-6 leading-tight">
+            <h1 className="text-5xl lg:text-6xl font-bold text-[#1d2d45] mb-4 leading-tight">
               {service.title}
             </h1>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-600 mb-6 leading-relaxed">
               {service.tagline}
             </p>
           </div>
@@ -58,7 +58,7 @@ export default function ServiceDetails() {
       </div>
 
       {/* Main Content */}
-      <div className="bg-gray-50 py-24 pt-16">
+      <div className="bg-gray-50 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
             <div className="lg:col-span-2 space-y-12">
