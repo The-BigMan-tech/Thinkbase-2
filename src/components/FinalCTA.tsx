@@ -36,7 +36,7 @@ export default function FinalCTA() {
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link
-                to="/#services"
+                to="/services"
                 className="w-full sm:w-auto px-10 py-5 bg-white/5 text-white border border-white/10 rounded-2xl font-bold text-lg hover:bg-white/10 transition-all duration-300"
               >
                 Explore Services

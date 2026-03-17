@@ -27,7 +27,7 @@ export default function Hero() {
                                 Get Started
                                 <ArrowRight size={20} />
                             </Link>
-                            <Link to="/#services" className="hover:scale-105 inline-flex items-center justify-center gap-2 bg-[#cad8ec] dark:bg-white/10 text-black dark:text-white px-8 py-4 rounded-lg transition-colors font-medium shadow-sm">
+                            <Link to="/services" className="hover:scale-105 inline-flex items-center justify-center gap-2 bg-[#cad8ec] dark:bg-white/10 text-black dark:text-white px-8 py-4 rounded-lg transition-colors font-medium shadow-sm">
                                 Explore Services
                             </Link>
                         </div>

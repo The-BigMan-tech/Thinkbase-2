@@ -3,6 +3,7 @@ import Header from './components/header/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import ServiceDetails from './pages/ServiceDetails';
+import ServicesPage from './pages/ServicesPage';
 import ComingSoon from './pages/ComingSoon';
 import GetStartedPage from './pages/GetStartedPage';
 import PrivacyPolicy from './pages/PrivacyPolicy';
@@ -18,6 +19,7 @@ function App() {
             <main>
                 <Routes>
                     <Route path="/" element={<Home />} />
+                    <Route path="/services" element={<ServicesPage />} />
                     <Route path="/service/:id" element={<ServiceDetails />} />
                     <Route path="/coming-soon" element={<ComingSoon />} />
                     <Route path="/get-started" element={<GetStartedPage />} />

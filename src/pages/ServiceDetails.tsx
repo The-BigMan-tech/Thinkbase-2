@@ -38,7 +38,7 @@ export default function ServiceDetails() {
     <div className="bg-white dark:bg-slate-950 min-h-screen pt-24 pb-8 transition-colors duration-500">
       {/* Hero Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-4">
-        <Link to="/#services" className="inline-flex items-center gap-2 text-gray-500 dark:text-gray-400 hover:text-[#1d2d45] dark:hover:text-white transition-colors mb-4 group">
+        <Link to="/services" className="inline-flex items-center gap-2 text-gray-500 dark:text-gray-400 hover:text-[#1d2d45] dark:hover:text-white transition-colors mb-4 group">
           <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
           Back to all services
         </Link>
@@ -127,7 +127,7 @@ export default function ServiceDetails() {
             Get Started
           </Link>
 
-          <Link to="/#services" className="bg-white dark:bg-slate-950 border-2 border-[#1d2d45] dark:border-white/20 text-[#1d2d45] dark:text-white px-10 py-4 rounded-xl font-bold hover:bg-gray-50 dark:hover:bg-slate-900 transition-colors text-lg">
+          <Link to="/services" className="bg-white dark:bg-slate-950 border-2 border-[#1d2d45] dark:border-white/20 text-[#1d2d45] dark:text-white px-10 py-4 rounded-xl font-bold hover:bg-gray-50 dark:hover:bg-slate-900 transition-colors text-lg">
             View All Services
           </Link>
         </div>
