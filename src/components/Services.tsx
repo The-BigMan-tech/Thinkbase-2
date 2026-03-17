@@ -1,11 +1,12 @@
-import { ArrowRight, Users, ShieldCheck, TrendingUp } from 'lucide-react';
+import { ArrowRight, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { services } from '../data/services';
+import { GearsIcon, AnalysisBoardIcon } from './CustomIcons';
 
 const iconMap = {
   Users: Users,
-  ShieldCheck: ShieldCheck,
-  TrendingUp: TrendingUp,
+  Gears: GearsIcon,
+  AnalysisBoard: AnalysisBoardIcon,
 };
 
 export default function Services() {

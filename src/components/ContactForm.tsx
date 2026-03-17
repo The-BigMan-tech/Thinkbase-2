@@ -5,6 +5,7 @@ export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '',
     company: '',
     message: ''
   });
@@ -31,6 +32,7 @@ export default function ContactForm() {
           access_key: accessKey,
           name: formData.name,
           email: formData.email,
+          phone: formData.phone,
           company: formData.company,
           message: formData.message,
           subject: `New Contact Form Submission from ${formData.name}`,
@@ -42,7 +44,7 @@ export default function ContactForm() {
 
       if (result.success) {
         setIsSubmitted(true);
-        setFormData({ name: '', email: '', company: '', message: '' });
+        setFormData({ name: '', email: '', phone: '', company: '', message: '' });
       } else {
         setError(result.message || 'Something went wrong. Please try again.');
       }
@@ -95,6 +97,18 @@ export default function ContactForm() {
                   onChange={handleChange}
                   className="w-full px-5 py-3.5 bg-gray-50 border border-transparent rounded-2xl focus:bg-white focus:border-[#3b5d91]/30 focus:ring-4 focus:ring-[#3b5d91]/5 outline-none transition-all shadow-sm"
                   placeholder="john@example.com"
+                />
+              </div>
+              <div className="space-y-2">
+                <label htmlFor="phone" className="text-sm font-bold text-white ml-1">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  required
+                  value={formData.phone}
+                  onChange={handleChange}
+                  className="w-full px-5 py-3.5 bg-gray-50 border border-transparent rounded-2xl focus:bg-white focus:border-[#3b5d91]/30 focus:ring-4 focus:ring-[#3b5d91]/5 outline-none transition-all shadow-sm"
+                  placeholder="+234 000 000 0000"
                 />
               </div>
               <div className="space-y-2">

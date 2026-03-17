@@ -1,12 +1,13 @@
 import { useParams, Link } from 'react-router-dom';
 import { useEffect } from 'react';
 import { services } from '../data/services';
-import { ArrowLeft, CheckCircle2, Users, ShieldCheck, TrendingUp } from 'lucide-react';
+import { ArrowLeft, CheckCircle2, Users } from 'lucide-react';
+import { GearsIcon, AnalysisBoardIcon } from '../components/CustomIcons';
 
 const iconMap = {
   Users: Users,
-  ShieldCheck: ShieldCheck,
-  TrendingUp: TrendingUp,
+  Gears: GearsIcon,
+  AnalysisBoard: AnalysisBoardIcon,
 };
 
 export default function ServiceDetails() {
@@ -126,7 +127,7 @@ export default function ServiceDetails() {
             Get Started
           </Link>
 
-          <Link to="/" className="bg-white border-2 border-[#1d2d45] text-[#1d2d45] px-10 py-4 rounded-xl font-bold hover:bg-gray-50 transition-colors text-lg">
+          <Link to="/#services" className="bg-white border-2 border-[#1d2d45] text-[#1d2d45] px-10 py-4 rounded-xl font-bold hover:bg-gray-50 transition-colors text-lg">
             View All Services
           </Link>
         </div>

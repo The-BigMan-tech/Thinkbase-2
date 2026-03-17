@@ -31,7 +31,7 @@ export const services = [
     title: 'Systems and Controls',
     tagline: 'Fortifying your operations with robust systems, controls and risk management.',
     description: 'ThinkBase Advisory supports organisations in strengthening operational discipline and managing key risks..',
-    icon: 'ShieldCheck',
+    icon: 'Gears',
     shortDescription: 'Strong systems and controls are essential for consistent service delivery and sustainable business performance.ThinkBase Advisory supports organisations in strengthening operational discipline and managing key risks.Services include.',
     details: [
       {
@@ -58,7 +58,7 @@ export const services = [
     title: 'Business Advisory Services',
     tagline: 'Practical strategies for sustainable growth and operational excellence.',
     description: 'Supporting organisations with practical strategies and operational improvements that drive sustainable growth.',
-    icon: 'TrendingUp',
+    icon: 'AnalysisBoard',
     shortDescription: 'We provide practical advisory support to organisations seeking to improve performance and growth.',
     details: [
       {
