@@ -34,18 +34,15 @@ export default function Contact() {
                 </div>
 
                 <div className="relative group">
-                    <div className="absolute inset-0 bg-[#3b5d91] rounded-3xl transform rotate-3 transition-transform group-hover:rotate-1 opacity-10"></div>
-                    <div className="relative bg-white p-4 rounded-3xl shadow-xl overflow-hidden">
-                        <img 
-                            src="/assets/location.jpg" 
-                            alt="Our Location" 
-                            className="w-full h-[400px] object-cover rounded-2xl"
-                        />
-                    </div>
+                    <img 
+                        src="/assets/location.jpg" 
+                        alt="Our Location" 
+                        className="w-full h-[400px] object-cover rounded-2xl"
+                    />
                 </div>
             </div>
         </div>
     </section>
   )
 }
-
+
