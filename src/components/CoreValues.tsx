@@ -1,4 +1,5 @@
 import { Shield, Lightbulb, TrendingUp } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const principles = [
   {
@@ -43,7 +44,15 @@ export default function CoreValues() {
                 {principle.title}
               </h3>
             </div>
-        ))}
+          ))}
+        </div>
+        <div className="mt-20 text-center">
+            <Link 
+                to="/get-started" 
+                className="inline-flex items-center gap-2 bg-[#1d2d45] text-white px-10 py-5 rounded-2xl font-bold hover:bg-[#324a70] hover:shadow-2xl transition-all duration-300"
+            >
+                Start Your Performance Journey
+            </Link>
         </div>
       </div>
     </section>

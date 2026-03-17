@@ -1,4 +1,5 @@
 import { Target, Lightbulb, TrendingUp, Users } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import CoreValues from './CoreValues';
 
 const keyObjectives = [
@@ -25,6 +26,15 @@ export default function About() {
                         <p>
                             Many businesses invest heavily in attracting customers but pay less attention to the systems, processes, and behaviours that determine whether those customers return.
                         </p>    
+                        <div className="pt-4">
+                            <Link 
+                                to="/get-started" 
+                                className="inline-flex items-center gap-2 bg-[#324a70] text-white px-8 py-4 rounded-xl font-bold hover:bg-[#1d2d45] hover:shadow-xl transition-all duration-300 group"
+                            >
+                                Get Started
+                                <TrendingUp size={20} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                            </Link>
+                        </div>
                     </div>
                 </div>  
 

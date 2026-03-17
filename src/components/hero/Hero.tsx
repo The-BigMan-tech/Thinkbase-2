@@ -23,7 +23,7 @@ export default function Hero() {
                         </p>
  
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <Link to="/coming-soon" className="inline-flex items-center justify-center gap-2 bg-[#304c76] text-white px-8 py-4 rounded-lg hover:bg-[#5988ce] transition-all hover:scale-110 font-medium shadow-md">
+                            <Link to="/get-started" className="inline-flex items-center justify-center gap-2 bg-[#304c76] text-white px-8 py-4 rounded-lg hover:bg-[#5988ce] transition-all hover:scale-110 font-medium shadow-md">
                                 Get Started
                                 <ArrowRight size={20} />
                             </Link>

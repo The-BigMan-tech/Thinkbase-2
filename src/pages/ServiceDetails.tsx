@@ -1,7 +1,13 @@
 import { useParams, Link } from 'react-router-dom';
 import { useEffect } from 'react';
 import { services } from '../data/services';
-import { ArrowLeft, CheckCircle2 } from 'lucide-react';
+import { ArrowLeft, CheckCircle2, Users, ShieldCheck, TrendingUp } from 'lucide-react';
+
+const iconMap = {
+  Users: Users,
+  ShieldCheck: ShieldCheck,
+  TrendingUp: TrendingUp,
+};
 
 export default function ServiceDetails() {
   const { id } = useParams();
@@ -25,6 +31,8 @@ export default function ServiceDetails() {
     );
   }
 
+  const IconComponent = iconMap[service.icon as keyof typeof iconMap];
+
   return (
     <div className="bg-white min-h-screen pt-24 pb-8">
       {/* Hero Section */}
@@ -46,13 +54,11 @@ export default function ServiceDetails() {
               {service.tagline}
             </p>
           </div>
-          <div className="relative">
-            <div className="absolute -inset-4 bg-gradient-to-tr from-[#324a70] to-[#1d2d45] opacity-10 blur-2xl rounded-3xl" />
-            <img 
-              src={service.image} 
-              alt={service.title} 
-              className="relative left-[25%] w-[45%] h-[50%] rounded-3xl shadow-2xl"
-            />
+          <div className="relative flex justify-center">
+            <div className="absolute inset-0 bg-gradient-to-tr from-[#324a70] to-[#1d2d45] opacity-10 blur-3xl rounded-full" />
+            <div className="relative w-80 h-80 bg-white rounded-[3.5rem] shadow-2xl flex items-center justify-center text-[#324a70] transform hover:rotate-3 transition-transform duration-500">
+               {IconComponent && <IconComponent size={128} strokeWidth={1.2} />}
+            </div>
           </div>
         </div>
       </div>
@@ -98,7 +104,7 @@ export default function ServiceDetails() {
                   Contact us today to discuss how we can tailor this solution to your specific organization needs.
                 </p>
                 <Link 
-                  to="/coming-soon" 
+                  to="/get-started" 
                   className="block w-full text-center bg-[#324a70] text-white py-4 rounded-xl font-bold hover:bg-[#1d2d45] transition-colors"
                 >
                   Get Started
@@ -116,9 +122,10 @@ export default function ServiceDetails() {
           Our advisors are ready to help you navigate your challenges and unlock new opportunities for growth.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link to="/coming-soon" className="bg-[#1d2d45] text-white px-10 py-4 rounded-xl font-bold hover:scale-105 transition-transform text-lg">
+          <Link to="/get-started" className="bg-[#1d2d45] text-white px-10 py-4 rounded-xl font-bold hover:scale-105 transition-transform text-lg">
             Get Started
           </Link>
+
           <Link to="/" className="bg-white border-2 border-[#1d2d45] text-[#1d2d45] px-10 py-4 rounded-xl font-bold hover:bg-gray-50 transition-colors text-lg">
             View All Services
           </Link>

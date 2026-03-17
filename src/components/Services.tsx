@@ -1,6 +1,12 @@
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Users, ShieldCheck, TrendingUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { services } from '../data/services';
+
+const iconMap = {
+  Users: Users,
+  ShieldCheck: ShieldCheck,
+  TrendingUp: TrendingUp,
+};
 
 export default function Services() {
   return (
@@ -14,18 +20,18 @@ export default function Services() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service) => (
-            <div
-              key={service.id}
-              className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col h-full"
-            >
-              <div className="flex justify-center h-48 overflow-hidden bg-white">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-[50%] h-full hover:scale-105 transition-transform duration-300"
-                />
-              </div>
+          {services.map((service) => {
+            const IconComponent = iconMap[service.icon as keyof typeof iconMap];
+            return (
+              <div
+                key={service.id}
+                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col h-full group"
+              >
+                <div className="flex justify-center items-center h-64 bg-gray-50/50 p-8">
+                  <div className="w-28 h-28 bg-white rounded-3xl shadow-sm flex items-center justify-center text-[#324a70] group-hover:scale-110 group-hover:bg-[#324a70] group-hover:text-white transition-all duration-500">
+                    {IconComponent && <IconComponent size={64} strokeWidth={1.5} />}
+                  </div>
+                </div>
 
               <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-2xl font-semibold text-[#1d2d45] mb-2">{service.title}</h3>
@@ -37,9 +43,10 @@ export default function Services() {
                   Learn More
                   <ArrowRight size={18} />
                 </Link>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
