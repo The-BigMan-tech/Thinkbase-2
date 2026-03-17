@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="space-y-6">
             <h3 className="text-white text-xl font-bold tracking-tight">THINKBASE ADVISORY</h3>
             <p className="text-sm leading-relaxed opacity-80">
-              Empowering businesses through expert risk management, specialized audits, and strategic growth consulting.
+              Thinkbase Advisory is a customer experience-led business advisory firm focused on helping organisations improve service delivery, strengthen operational systems, and enhance business performance.
             </p>
             <div className="flex gap-4">
               {[Linkedin, Twitter, Facebook, Mail].map((Icon, i) => (
