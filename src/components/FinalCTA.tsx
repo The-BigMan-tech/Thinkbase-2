@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 export default function FinalCTA() {
   return (
-    <section className="py-24 bg-white overflow-hidden">
+    <section className="py-24 bg-white dark:bg-slate-950 overflow-hidden transition-colors duration-500">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative bg-[#1d2d45] rounded-[3rem] p-12 md:p-20 text-center text-white overflow-hidden shadow-[0_32px_80px_-16px_rgba(29,45,69,0.5)]">
+        <div className="relative bg-[#1d2d45] dark:bg-slate-900 rounded-[3rem] p-12 md:p-20 text-center text-white overflow-hidden shadow-[0_32px_80px_-16px_rgba(29,45,69,0.5)] dark:shadow-none border border-white/5">
           {/* Animated background elements */}
           <div className="absolute top-0 left-0 w-full h-full">
             <div className="absolute top-[-10%] right-[-5%] w-[40%] h-[40%] bg-blue-500/10 rounded-full blur-[100px]" />

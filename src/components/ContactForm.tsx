@@ -64,7 +64,7 @@ export default function ContactForm() {
 
   return (
     <div className="relative">
-      <div className="bg-[#324a70]/80 backdrop-blur-xl p-8 md:p-10 rounded-[2.5rem] shadow-[0_32px_64px_-16px_rgba(29,45,69,0.2)] border border-white/10 relative z-10 overflow-hidden">
+      <div className="bg-[#324a70]/80 dark:bg-slate-900/90 backdrop-blur-xl p-8 md:p-10 rounded-[2.5rem] shadow-[0_32px_64px_-16px_rgba(29,45,69,0.2)] border border-white/10 relative z-10 overflow-hidden">
         {/* Internal glow effect */}
         <div className="absolute -top-20 -left-20 w-40 h-40 bg-white/10 rounded-full blur-3xl pointer-events-none"></div>
         
@@ -83,7 +83,7 @@ export default function ContactForm() {
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-5 py-3.5 bg-gray-50 border border-transparent rounded-2xl focus:bg-white focus:border-[#3b5d91]/30 focus:ring-4 focus:ring-[#3b5d91]/5 outline-none transition-all shadow-sm"
+                  className="w-full px-5 py-3.5 bg-gray-50 dark:bg-slate-800 border border-transparent dark:border-white/5 rounded-2xl focus:bg-white dark:focus:bg-slate-700 focus:border-[#3b5d91]/30 focus:ring-4 focus:ring-[#3b5d91]/5 outline-none transition-all shadow-sm text-[#1d2d45] dark:text-white placeholder-gray-400 dark:placeholder-gray-500"
                   placeholder="John Doe"
                 />
               </div>
@@ -95,7 +95,7 @@ export default function ContactForm() {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-5 py-3.5 bg-gray-50 border border-transparent rounded-2xl focus:bg-white focus:border-[#3b5d91]/30 focus:ring-4 focus:ring-[#3b5d91]/5 outline-none transition-all shadow-sm"
+                  className="w-full px-5 py-3.5 bg-gray-50 dark:bg-slate-800 border border-transparent dark:border-white/5 rounded-2xl focus:bg-white dark:focus:bg-slate-700 focus:border-[#3b5d91]/30 focus:ring-4 focus:ring-[#3b5d91]/5 outline-none transition-all shadow-sm text-[#1d2d45] dark:text-white placeholder-gray-400 dark:placeholder-gray-500"
                   placeholder="john@example.com"
                 />
               </div>
@@ -107,7 +107,7 @@ export default function ContactForm() {
                   required
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full px-5 py-3.5 bg-gray-50 border border-transparent rounded-2xl focus:bg-white focus:border-[#3b5d91]/30 focus:ring-4 focus:ring-[#3b5d91]/5 outline-none transition-all shadow-sm"
+                  className="w-full px-5 py-3.5 bg-gray-50 dark:bg-slate-800 border border-transparent dark:border-white/5 rounded-2xl focus:bg-white dark:focus:bg-slate-700 focus:border-[#3b5d91]/30 focus:ring-4 focus:ring-[#3b5d91]/5 outline-none transition-all shadow-sm text-[#1d2d45] dark:text-white placeholder-gray-400 dark:placeholder-gray-500"
                   placeholder="+234 000 000 0000"
                 />
               </div>
@@ -118,7 +118,7 @@ export default function ContactForm() {
                   id="company"
                   value={formData.company}
                   onChange={handleChange}
-                  className="w-full px-5 py-3.5 bg-gray-50 border border-transparent rounded-2xl focus:bg-white focus:border-[#3b5d91]/30 focus:ring-4 focus:ring-[#3b5d91]/5 outline-none transition-all shadow-sm"
+                  className="w-full px-5 py-3.5 bg-gray-50 dark:bg-slate-800 border border-transparent dark:border-white/5 rounded-2xl focus:bg-white dark:focus:bg-slate-700 focus:border-[#3b5d91]/30 focus:ring-4 focus:ring-[#3b5d91]/5 outline-none transition-all shadow-sm text-[#1d2d45] dark:text-white placeholder-gray-400 dark:placeholder-gray-500"
                   placeholder="Your Company"
                 />
               </div>
@@ -130,7 +130,7 @@ export default function ContactForm() {
                   value={formData.message}
                   onChange={handleChange}
                   rows={4}
-                  className="w-full px-5 py-3.5 bg-gray-50 border border-transparent rounded-2xl focus:bg-white focus:border-[#3b5d91]/30 focus:ring-4 focus:ring-[#3b5d91]/5 outline-none transition-all resize-none shadow-sm"
+                  className="w-full px-5 py-3.5 bg-gray-50 dark:bg-slate-800 border border-transparent dark:border-white/5 rounded-2xl focus:bg-white dark:focus:bg-slate-700 focus:border-[#3b5d91]/30 focus:ring-4 focus:ring-[#3b5d91]/5 outline-none transition-all resize-none shadow-sm text-[#1d2d45] dark:text-white placeholder-gray-400 dark:placeholder-gray-500"
                   placeholder="Tell us about your needs..."
                 ></textarea>
               </div>
@@ -142,7 +142,7 @@ export default function ContactForm() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-[#1d2d45] text-white px-8 py-4 rounded-2xl hover:bg-[#3b5d91] transition-all transform hover:scale-[1.02] active:scale-[0.98] disabled:opacity-70 disabled:hover:scale-100 flex items-center justify-center gap-3 font-bold text-lg shadow-xl shadow-[#1d2d45]/10 mt-2"
+                className="w-full bg-[#1d2d45] dark:bg-blue-600 text-white px-8 py-4 rounded-2xl hover:bg-[#3b5d91] dark:hover:bg-blue-500 transition-all transform hover:scale-[1.02] active:scale-[0.98] disabled:opacity-70 disabled:hover:scale-100 flex items-center justify-center gap-3 font-bold text-lg shadow-xl shadow-[#1d2d45]/10 mt-2"
               >
                 {isSubmitting ? (
                   <>
@@ -181,7 +181,7 @@ export default function ContactForm() {
         )}
       </div>
       {/* Decorative element */}
-      <div className="absolute -bottom-10 -right-10 w-48 h-48 bg-blue-100/50 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute -bottom-10 -right-10 w-48 h-48 bg-blue-100/50 dark:bg-blue-900/20 rounded-full blur-3xl -z-10"></div>
     </div>
   );
 }

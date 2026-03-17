@@ -10,10 +10,10 @@ export function NavMenus() {
                 <a 
                     key={link.label}
                     href={link.href} 
-                    className="relative text-[#1d2d45] font-semibold text-sm tracking-wide transition-all duration-300 hover:text-[#324a70] group"
+                    className="relative text-[#1d2d45] dark:text-gray-300 font-semibold text-sm tracking-wide transition-all duration-300 hover:text-[#324a70] dark:hover:text-blue-400 group"
                 >
                     {link.label}
-                    <span className="absolute bottom-[-4px] left-0 w-0 h-0.5 bg-[#324a70] transition-all duration-300 group-hover:w-full" />
+                    <span className="absolute bottom-[-4px] left-0 w-0 h-0.5 bg-[#324a70] dark:bg-blue-400 transition-all duration-300 group-hover:w-full" />
                 </a>
             ))}
         </div>
