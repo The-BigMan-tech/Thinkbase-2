@@ -40,11 +40,24 @@ export default function GetStartedPage() {
               </div>
             </div>
           </div>
+            <div className="flex flex-col md:flex-row items-start justify-between gap-12 pt-12 px-6 ">
+                {/* Text Side - md:w-2/5 gives the form more room to grow */}
+                <div className="md:w-2/5 md:sticky md:top-24">
+                  <h3 className="text-4xl md:text-6xl font-bold text-[#1d2d45] dark:text-white italic leading-tight text-left">
+                    Ready to transform your service delivery? 
+                    <span className="block mt-4 text-2xl font-normal not-italic opacity-80">
+                      Fill out the form below.
+                    </span>
+                  </h3>
+                </div>
+                
+                {/* Form Side */}
+                <div className="w-full md:w-3/5 max-w-4xl"> {/* Increased max-width here */}
+                  <ContactForm />
+                </div>
 
-          <div className="pt-8">
-            <h3 className="text-2xl font-bold text-[#1d2d45] dark:text-white mb-8 text-center italic">Ready to transform your service delivery? Fill out the form below.</h3>
-            <ContactForm />
-          </div>
+            </div>
+
         </div>
       </div>
 
