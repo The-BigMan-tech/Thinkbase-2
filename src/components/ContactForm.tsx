@@ -48,7 +48,7 @@ export default function ContactForm() {
       } else {
         setError(result.message || 'Something went wrong. Please try again.');
       }
-    } catch (err) {
+    } catch  {
       setError('Failed to send message. Please check your connection.');
     } finally {
       setIsSubmitting(false);
