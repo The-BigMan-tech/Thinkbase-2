@@ -47,7 +47,7 @@ export default function PrivacyPolicy() {
               <p className="text-black">
                 Primarily, we collect, process and store your Personal Data to help us to:
               </p>
-                <ul className='flex flex-col gap-4 ml-5'>
+                <ul className='flex flex-col gap-4 ml-5 text-black'>
                     <li>Monitor, review, evaluate and improve your experience when you visit our website</li>
                     <li>Notify you of changes to our websites or relevant processes.</li>
                     <li>Process or manage your appointments with any of our staff.</li>
