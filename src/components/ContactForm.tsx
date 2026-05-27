@@ -19,13 +19,13 @@ export default function ContactForm() {
         setError(null);
         
         try {
-            const formURL = "https://docs.google.com/forms/d/e/1FAIpQLSel16gUYSYnFHpo-AZ9vFzNDD3btX3QhIUGFlJTCTLynbDk2g/formResponse";
+            const formURL = "https://docs.google.com/forms/d/e/1FAIpQLSfbHpYck0fhFBgtbCz3147_IB5ANcdbhT_KmaEDxflgiHiQhA/formResponse";
             const body = new URLSearchParams({
-                'entry.153345615': formData.name,   // Change these numbers!
-                'entry.380546120': formData.email,
-                'entry.175010362': formData.phone,
-                "entry.1579503156":formData.company,
-                "entry.712884784":formData.message
+                'entry.1002663004': formData.name,   // Change these numbers!
+                'entry.1025268791': formData.email,
+                'entry.647524275': formData.phone,
+                "entry.779973641":formData.company,
+                "entry.1039892611":formData.message
             });
             fetch(formURL, {
                 method: 'POST',
