@@ -17,7 +17,7 @@ export default function Contact() {
 
                     <div className="grid gap-8">
                         {[
-                          { icon: <Mail />, label: 'Email Us', value: 'ThinkBaseadvisory@gmail.com', color: 'bg-blue-50 dark:bg-blue-900/30 text-[#3b5d91] dark:text-blue-300' },
+                          { icon: <Mail />, label: 'Email Us', value: 'info@thinkbaseadvisory.com', color: 'bg-blue-50 dark:bg-blue-900/30 text-[#3b5d91] dark:text-blue-300' },
                           { icon: <Phone />, label: 'Call Us', value: '+234-911-999-0083', color: 'bg-indigo-50 dark:bg-indigo-900/30 text-[#3b5d91] dark:text-indigo-300' },
                           { icon: <MapPin />, label: 'Visit Us', value: 'Suite 100, Adeola house, Opebi Ikeja, Lagos', color: 'bg-gray-50 dark:bg-slate-800 text-[#3b5d91] dark:text-gray-300' }
                         ].map((item, i) => (
